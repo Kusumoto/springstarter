@@ -16,12 +16,14 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
+import { RegisterComponent } from './register/register.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
