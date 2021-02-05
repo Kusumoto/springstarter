@@ -1,5 +1,5 @@
 <div>
-  <nz-card nzTitle="Register new user" style="max-width: 600px;">
+  <nz-card nzTitle="Register new user" style="max-width: 600px; margin-top: 50px;" class="container-center">
     <form nz-form [nzLayout]="'vertical'" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
       <nz-form-item>
         <nz-form-label>E-Mail</nz-form-label>
@@ -9,7 +9,7 @@
       </nz-form-item>
       <nz-form-item>
         <nz-form-label>Password</nz-form-label>
-        <nz-form-control nzErrorTip="Please input your Password!">
+        <nz-form-control nzErrorTip="Please input password!">
           <input nz-input formControlName="password" placeholder="Password" type="password" />
         </nz-form-control>
       </nz-form-item>
@@ -22,7 +22,7 @@
               Please input confirm password!
             </ng-container>
             <ng-container *ngIf="control.hasError('confirm')">
-              Password and Confirm Password not match!
+              Password and Confirm password not match!
             </ng-container>
           </ng-template>
         </nz-form-control>
